@@ -26,6 +26,6 @@
     },
     "forwardPorts": [8888],
     "mounts": [
-        "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/manim/.ssh,readonly"
+        "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/manim/.ssh,readonly"
     ]
 }
