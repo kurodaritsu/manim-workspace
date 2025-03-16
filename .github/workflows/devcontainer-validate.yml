@@ -1,4 +1,4 @@
-name: Devcontainer Build
+name: devcontainer-validate
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   validate:
-    name: Validate Dev Container Build
+    name: build
     runs-on: ubuntu-latest
     
     steps:
