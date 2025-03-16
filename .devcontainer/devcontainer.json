@@ -25,6 +25,7 @@
     },
     "onCreateCommand": "if [ -z \"$CODESPACES\" ]; then ssh-agent; ssh-add -l; fi",
     "postCreateCommand": "pip install -r requirements.txt",
+    "postStartCommand": "git update-index --skip-worktree .env",
     "containerEnv": {
         "PYTHONPATH": "${containerWorkspaceFolder}"
     },
