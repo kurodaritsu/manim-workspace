@@ -2,7 +2,9 @@
     "name": "manim-dev",
     "image": "manimcommunity/manim:v0.19.0",
     "features": {
-        "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {}
+        "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {},
+        "ghcr.io/devcontainers/features/sshd:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
     },
     "customizations": {
         "vscode": {
@@ -17,9 +19,13 @@
             }
         }
     },
+    "onCreateCommand": "if [ -z \"$CODESPACES\" ]; then ssh-agent; ssh-add -l; fi",
     "postCreateCommand": "pip install -r requirements.txt",
     "containerEnv": {
         "PYTHONPATH": "${containerWorkspaceFolder}"
     },
-    "forwardPorts": [8888]
+    "forwardPorts": [8888],
+    "mounts": [
+        "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/manim/.ssh,readonly"
+    ]
 }
