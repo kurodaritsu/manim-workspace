@@ -1,0 +1,25 @@
+{
+    "name": "manim-dev",
+    "image": "manimcommunity/manim:v0.19.0",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Rickaym.manim-sideview",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "manim-sideview.manimExecutableVersion": "v0.19.0"
+            }
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "containerEnv": {
+        "PYTHONPATH": "${containerWorkspaceFolder}"
+    },
+    "forwardPorts": [8888]
+}

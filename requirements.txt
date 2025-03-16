@@ -1,0 +1,12 @@
+# Some packages required to run `manim` are installed by default upon building
+# the container. To check the complete package list, run `pip freeze` on your
+# devcontainer terminal.
+
+# It is generally discouraged to enumerate the packages here as there would be
+# dependency issues that may arise, especially when using a different `manim`
+# version.
+
+# If there's a package that you want to use but is not installed by default,
+# include them here and run `pip install -r requirements.txt`
+
+pandas==2.2.3
