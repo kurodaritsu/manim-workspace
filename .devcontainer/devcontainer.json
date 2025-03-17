@@ -1,6 +1,6 @@
 {
     "name": "manim-dev",
-    "image": "manimcommunity/manim:v0.19.0",
+    "image": "manimcommunity/manim:stable",
     "hostRequirements": {
         "cpus": 2,
         "memory": "8gb"
@@ -19,15 +19,17 @@
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
-                "manim-sideview.manimExecutableVersion": "v0.19.0"
+                "manim-sideview.manimExecutableVersion": "${containerEnv.MANIM_VERSION}"
             }
         }
     },
     "onCreateCommand": "if [ -z \"$CODESPACES\" ]; then ssh-agent; ssh-add -l; fi",
-    "postCreateCommand": "pip install -r requirements.txt",
+    "updateCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "export MANIM_VERSION=$(python -c 'import manim; print(manim.__version__)')",
     "postStartCommand": "git update-index --skip-worktree .env",
     "containerEnv": {
-        "PYTHONPATH": "${containerWorkspaceFolder}"
+        "PYTHONPATH": "${containerWorkspaceFolder}",
+        "MANIM_VERSION": "v0.19.0"  // Default version, will be overridden if using stable
     },
     "forwardPorts": [8888],
     "shutdownAction": "stopContainer",
