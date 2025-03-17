@@ -1,10 +1,6 @@
 {
     "name": "manim-dev",
     "image": "manimcommunity/manim:stable",
-    "hostRequirements": {
-        "cpus": 2,
-        "memory": "8gb"
-    },
     "features": {
         "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {},
         "ghcr.io/devcontainers/features/sshd:1": {},
