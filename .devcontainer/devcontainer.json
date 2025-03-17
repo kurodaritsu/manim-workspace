@@ -24,7 +24,7 @@
         }
     },
     "onCreateCommand": "if [ -z \"$CODESPACES\" ]; then ssh-agent; ssh-add -l; fi",
-    "updateCreateCommand": "pip install -r requirements.txt",
+    "updateContentCommand": "pip install -r requirements.txt",
     "postCreateCommand": "export MANIM_VERSION=$(python -c 'import manim; print(manim.__version__)')",
     "postStartCommand": "git update-index --skip-worktree .env",
     "containerEnv": {
