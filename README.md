@@ -25,8 +25,8 @@ Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy 
 
 1. [Download](https://github.com/KaidenFrizu/manim-workspace/archive/refs/heads/main.zip) (or [Clone](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)) this repository.
 
-   > [!NOTE]
-   > If you've downloaded the repository, make sure to extract the contents in your `.zip` file
+> [!NOTE]
+> If you've downloaded the repository, make sure to extract the contents in your `.zip` file
 
 2. In VS Code, Open the Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`)
 
