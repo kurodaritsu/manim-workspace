@@ -12,6 +12,8 @@ This Dev Container also comes with LaTeX for rendering Math text and [Manim Side
 
 You can also use this container to run manim on JupyterLab. For details, see [Using the Workspace - Jupyter Lab](#jupyter-lab)
 
+---
+
 ## Setup
 ### GitHub Codespaces
 Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy working on your environment.
@@ -24,22 +26,21 @@ Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy 
 > You must have [Docker](https://www.docker.com/get-started/) and [Visual Studio Code](https://code.visualstudio.com/download) with [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed
 
 1. [Download](https://github.com/KaidenFrizu/manim-workspace/archive/refs/heads/main.zip) (or [Clone](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)) this repository.
-
-> [!NOTE]
-> If you've downloaded the repository, make sure to extract the contents in your `.zip` file
-
 2. In VS Code, Open the Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`)
-
 3. Search and select *"Dev Containers: Open Folder in Container"*
 
    ![Type Dev Containers](.github/md-resources/open_folder_in_container.png)
 
 4. Select the folder that was downloaded/cloned to your computer.
-
 5. Create a `manim` [Scene](src/example_scene.py) and enjoy working on your environment.
+
+> [!NOTE]
+> If you've downloaded the repository, make sure to extract the contents in your `.zip` file
 
 > [!TIP]
 > To re-open the container when you launch VS Code again, follow steps 2-5
+
+---
 
 ## Using the Container
 You can use one (or both) of the methods to create and render animations in `manim`, depending on your preference.
@@ -74,6 +75,8 @@ You can use one (or both) of the methods to create and render animations in `man
 > [!TIP]
 > For more examples using `manim` on notebooks, visit:
 > https://github.com/ManimCommunity/jupyter_examples
+
+---
 
 ## I have a question using this container. Where do I ask?
 You can ask through [Discussions](https://github.com/KaidenFrizu/manim-workspace/discussions). Be sure to search for existing questions or threads and ask from there. Otherwise, you can make a new one.
