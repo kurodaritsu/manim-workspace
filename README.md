@@ -4,11 +4,11 @@
 <a href="https://pypi.org/project/manim/"><img alt="pypi-version" src="https://img.shields.io/pypi/v/manim?logo=pypi&label=manim" /></a>
 <a href="https://github.com/ManimCommunity/manim"><img alt="manim-gh-repo" src= "https://img.shields.io/badge/ManimCommunity-manim-blue?logo=github&logoColor=181717&color=red"></a>
 
-For `manim` animators who doesn't want to install package managers and dependencies (e.g. LaTeX) in their local machine to have a working `manim` environment.
+For `manim` animators who doesn't want to install package managers and dependencies (e.g. FFmpeg, LaTeX) in their local machine to have a working `manim` environment.
 
 This workspace utilizes Dev Containers that handle `manim` installation, dependencies, and updates. The container uses `manim` [Docker image](https://hub.docker.com/r/manimcommunity/manim/tags).
 
-This Dev Container also comes with LaTeX for rendering Math text and [Manim Sideview](https://github.com/Rickaym/manim-sideview) VS Code Extension. For details on using the extension, visit the extension [page](https://marketplace.visualstudio.com/items?itemName=Rickaym.manim-sideview).
+This Dev Container also comes with FFmpeg and LaTeX for rendering Math text and [Manim Sideview](https://github.com/Rickaym/manim-sideview) VS Code Extension. For details on using the extension, visit the [extension page](https://marketplace.visualstudio.com/items?itemName=Rickaym.manim-sideview).
 
 You can also use this container to run manim on JupyterLab. For details, see [Using the Workspace - Jupyter Lab](#jupyter-lab)
 
@@ -91,7 +91,7 @@ You can use one (or both) methods to create and render animations in `manim`, de
    <img alt = "Jupyter Manim Snapshot" src=".github/md-resources/jupyter_run_manim_snapshot.png" style="width:75%; height:auto;">
 
 > [!TIP]
-> To shutdown your current Jupyter Lab server, press `Ctrl + C` on the same terminal, or go to `File -> Shut Down` in Jupyter Lab window.
+> To shutdown your current Jupyter Lab server, press `Ctrl + C` on the same terminal, or go to `File -> Shut Down` in Jupyter Lab window. To view currently running servers, run `jupyter server list` on a terminal.
 
 > [!TIP]
 > For more examples using `manim` on notebooks, visit:
