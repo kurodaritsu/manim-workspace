@@ -52,7 +52,7 @@ You can use one (or both) of the methods to create and render animations in `man
 3. Select the scene from your current file that you wanted to render.
 4. The output file would be autoplayed on the right side of your VS Code window.
 
-   <img alt = "Manim Sideview Snapshot" src=".github/md-resources/manim_sideview_snapshot.png" style="width:70%; height:auto;">
+   <img alt = "Manim Sideview Snapshot" src=".github/md-resources/manim_sideview_snapshot.png" style="width:75%; height:auto;">
 
 > [!TIP]
 > You can modify your settings in VS Code to automatically render the current scene on saving the `.py` file.
@@ -68,6 +68,7 @@ You can use one (or both) of the methods to create and render animations in `man
 2. Run the command `jupyter lab`.
 3. Open one of the `http` URLs given in the terminal to your browser.
 4. From the Jupyter environment, create a [notebook](src/example_notebook.ipynb) and enjoy creating animations from here.
+   <img alt = "Jupyter Manim Snapshot" src=".github/md-resources/jupyter-run-manim-snapshot.png" style="width:75%; height:auto;">
 
 > [!TIP]
 > To shutdown your current Jupyter Lab server, press `Ctrl + C` on the same terminal, or go to `File -> Shut Down` in Jupyter Lab window.
