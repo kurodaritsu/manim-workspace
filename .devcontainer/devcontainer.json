@@ -3,7 +3,6 @@
     "image": "manimcommunity/manim:stable",
     "features": {
         "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {},
-        "ghcr.io/devcontainers/features/sshd:1": {},
         "ghcr.io/devcontainers/features/git:1": {}
     },
     "customizations": {
@@ -25,8 +24,5 @@
         "PYTHONPATH": "${containerWorkspaceFolder}"
     },
     "forwardPorts": [8888],
-    "shutdownAction": "stopContainer",
-    "mounts": [
-        "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/manim/.ssh,readonly"
-    ]
+    "shutdownAction": "stopContainer"
 }
