@@ -12,6 +12,11 @@ This Dev Container also comes with LaTeX for rendering Math text and [Manim Side
 
 You can also use this container to run manim on JupyterLab. For details, see [Using the Workspace - Jupyter Lab](#jupyter-lab)
 
+
+<a href="https://github.com/KaidenFrizu/manim-workspace/discussions"><img alt="I have a question" src="https://img.shields.io/badge/I_have_a_question-blue?style=for-the-badge&"></a>
+<a href="https://github.com/KaidenFrizu/manim-workspace/issues"><img alt="I have an issue" src="https://img.shields.io/badge/I_have_an_issue-red?style=for-the-badge&"></a>
+
+
 ---
 
 ## Setup
@@ -25,25 +30,36 @@ Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy 
 > [!IMPORTANT]
 > You must have [Docker](https://www.docker.com/get-started/) and [Visual Studio Code](https://code.visualstudio.com/download) with [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed
 
-1. [Download](https://github.com/KaidenFrizu/manim-workspace/archive/refs/heads/main.zip) (or [Clone](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)) this repository.
-2. In VS Code, Open the Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`)
-3. Search and select *"Dev Containers: Open Folder in Container"*
+1. Create your own repository from this template.
+
+   ![Repository Template](.github/md-resources/repo_template.png)
+
+2. Clone or Download your created repository.
+
+   ```
+   git clone https://github.com/{YOUR_GH_USERNAME}/{YOUR_REPO_NAME}.git
+   ```
+
+   ![Clone or Download](.github/md-resources/download_repo.png)
+
+3. In VS Code, Open the Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`)
+4. Search and select *"Dev Containers: Open Folder in Container"*
 
    ![Type Dev Containers](.github/md-resources/open_folder_in_container.png)
 
-4. Select the folder that was downloaded/cloned to your computer.
-5. Create a `manim` [Scene](src/example_scene.py) and enjoy working on your environment.
+5. Select the folder that was cloned or downloaded to your computer.
+6. When the setup if finished, create a `manim` [Scene](src/example_scene.py) and enjoy working on your environment.
 
 > [!NOTE]
-> If you've downloaded the repository, make sure to extract the contents in your `.zip` file
+> If you've downloaded the repository, make sure to extract the contents in your `.zip` file before opening in the container.
 
 > [!TIP]
-> To re-open the container when you launch VS Code again, follow steps 2-5
+> To re-open the container when you launch VS Code again, follow Steps 3-6
 
 ---
 
 ## Using the Container
-You can use one (or both) of the methods to create and render animations in `manim`, depending on your preference.
+You can use one (or both) methods to create and render animations in `manim`, depending on your preference.
 
 ### Manim Sideview
 
@@ -66,9 +82,13 @@ You can use one (or both) of the methods to create and render animations in `man
 
 1. In your Dev Container environment, open a terminal (`` Ctrl + ` ``).
 2. Run the command `jupyter lab`.
-3. Open one of the `http` URLs given in the terminal to your browser.
-4. From the Jupyter environment, create a [notebook](src/example_notebook.ipynb) and enjoy creating animations from here.
-   <img alt = "Jupyter Manim Snapshot" src=".github/md-resources/jupyter-run-manim-snapshot.png" style="width:75%; height:auto;">
+3. Open one of the `http://` URLs given in the terminal to your browser.
+
+   ![Jupyter URL to copy](.github/md-resources/jupyter_url_to_copy.png)
+
+4. From the Jupyter Lab environment, create a [notebook](src/example_notebook.ipynb) and enjoy creating animations from here.
+
+   <img alt = "Jupyter Manim Snapshot" src=".github/md-resources/jupyter_run_manim_snapshot.png" style="width:75%; height:auto;">
 
 > [!TIP]
 > To shutdown your current Jupyter Lab server, press `Ctrl + C` on the same terminal, or go to `File -> Shut Down` in Jupyter Lab window.
@@ -76,11 +96,3 @@ You can use one (or both) of the methods to create and render animations in `man
 > [!TIP]
 > For more examples using `manim` on notebooks, visit:
 > https://github.com/ManimCommunity/jupyter_examples
-
----
-
-## I have a question using this container. Where do I ask?
-You can ask through [Discussions](https://github.com/KaidenFrizu/manim-workspace/discussions). Be sure to search for existing questions or threads and ask from there. Otherwise, you can make a new one.
-
-## I have an issue or a feature request for this template
-You can post these in [Issues](https://github.com/KaidenFrizu/manim-workspace/issues). Make sure that the issue or a feature request that you want has no duplicates by searching first.
