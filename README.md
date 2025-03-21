@@ -8,6 +8,8 @@ For `manim` animators who doesn't want to install package managers and dependenc
 
 This workspace utilizes Dev Containers that handle `manim` installation, dependencies, and updates. The container uses `manim` [Docker image](https://hub.docker.com/r/manimcommunity/manim/tags).
 
+With this template, you only need to install [VS Code](https://code.visualstudio.com/download) and [Docker](https://www.docker.com/get-started/) (if working locally) to use `manim`
+
 This Dev Container also comes with FFmpeg and LaTeX for rendering Math text and [Manim Sideview](https://github.com/Rickaym/manim-sideview) VS Code Extension. For details on using the extension, visit the [extension page](https://marketplace.visualstudio.com/items?itemName=Rickaym.manim-sideview).
 
 You can also use this container to run manim on JupyterLab. For details, see [Using the Workspace - Jupyter Lab](#jupyter-lab)
@@ -19,13 +21,30 @@ You can also use this container to run manim on JupyterLab. For details, see [Us
 
 ---
 
-## Setup
+## Setup :gear:
 ### GitHub Codespaces
-Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy working on your environment.
+If you want to immediately start working on a project on a cloud environment using only your installed VS Code, try going through these steps below.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/KaidenFrizu/manim-workspace?quickstart=1)
+> [!IMPORTANT]
+> If you're opening Codespaces through [Visual Studio Code](https://code.visualstudio.com/download) in your computer, you must have [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension installed
+
+1. Click the link below:
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/KaidenFrizu/manim-workspace?quickstart=1)
+
+2. Create a `manim` [Scene](src/example_scene.py), and enjoy working on your environment
+
+> [!NOTE]
+> Using Codespaces would consume Codespace Credits on your accounts. To learn more about Codespaces, visit [What are GitHub Codespaces - Billing for Codespaces](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces#billing-for-codespaces)
+
+> [!TIP]
+> To re-open your existing codespace when you launch VS Code again, open a Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`), search for `Codespaces: Connect to Codespace...`, and select your existing codespace
+> 
+> ![alt text](.github/md-resources/connect_to_codespace.png)
 
 ### Dev Containers
+
+If you wanted to work on a project locally without consuming credits, you can go through these steps to have an isolated local environment.
 
 > [!IMPORTANT]
 > You must have [Docker](https://www.docker.com/get-started/) and [Visual Studio Code](https://code.visualstudio.com/download) with [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed
@@ -43,7 +62,7 @@ Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy 
    ![Clone or Download](.github/md-resources/download_repo.png)
 
 3. In VS Code, Open the Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`)
-4. Search and select *"Dev Containers: Open Folder in Container"*
+4. Search and select `Dev Containers: Open Folder in Container...`
 
    ![Type Dev Containers](.github/md-resources/open_folder_in_container.png)
 
@@ -58,7 +77,7 @@ Click the link below, create a `manim` [Scene](src/example_scene.py), and enjoy 
 
 ---
 
-## Using the Container
+## Using the Container :desktop_computer:
 You can use one (or both) methods to create and render animations in `manim`, depending on your preference.
 
 ### Manim Sideview
@@ -75,8 +94,7 @@ You can use one (or both) methods to create and render animations in `manim`, de
 > ![manim-sideview.runOnSave](.github/md-resources/run_on_save_snapshot.png)
 
 > [!TIP]
-> For more details on how to use Manim Sideview, visit:
-> https://github.com/Rickaym/Manim-Sideview
+> For more details on how to use Manim Sideview, visit [Manim Sideview repository](https://github.com/Rickaym/Manim-Sideview)
 
 ### Jupyter Lab
 
