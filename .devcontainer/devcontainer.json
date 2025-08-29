@@ -1,8 +1,17 @@
 {
-    "name": "manim-dev",
-    "image": "manimcommunity/manim:stable",
+    "name": "${localWorkspaceFolderBasename}-devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "../",
+        "args": {
+            "UV_VERSION": "latest",
+            "PYTHON_VERSION": "3.13-slim",
+            "USER": "manimuser",
+            "USER_UID": "1000"
+        }
+    },
     "features": {
-        "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {},
+        "ghcr.io/devcontainers-extra/features/ffmpeg-apt-get:1": {},
         "ghcr.io/devcontainers/features/git:1": {}
     },
     "customizations": {
@@ -10,18 +19,17 @@
             "extensions": [
                 "Rickaym.manim-sideview",
                 "ms-python.python",
-                "ms-toolsai.jupyter"
-            ],
-            "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
-            }
+                "ms-toolsai.jupyter",
+                "tamasfe.even-better-toml"
+            ]
         }
     },
-    "updateContentCommand": "pip install -r requirements.txt",
-    "postStartCommand": "git update-index --skip-worktree .env",
+    "postCreateCommand": "uv sync",
     "containerEnv": {
-        "PYTHONPATH": "${containerWorkspaceFolder}"
+        "PYTHONPATH": "${containerWorkspaceFolder}",
+        "JUPYTER_DATA_DIR": "${containerWorkspaceFolder}"
     },
     "forwardPorts": [8888],
+    "remoteUser": "manimuser",
     "shutdownAction": "stopContainer"
 }

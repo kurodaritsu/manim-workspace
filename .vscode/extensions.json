@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "Rickaym.manim-sideview",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff",
+        "tamasfe.even-better-toml"
+    ]
+}
