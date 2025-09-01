@@ -1,8 +1,10 @@
 # Manim Workspace Template
 
-<a href="https://codespaces.new/KaidenFrizu/manim-workspace?quickstart=1"><img alt="open-codespace" src="https://img.shields.io/badge/codespace-click_to_launch-blue?logo=github&logoColor=181717"></a>
 <a href="https://pypi.org/project/manim/"><img alt="pypi-version" src="https://img.shields.io/pypi/v/manim?logo=pypi&label=manim" /></a>
 <a href="https://github.com/ManimCommunity/manim"><img alt="manim-gh-repo" src= "https://img.shields.io/badge/ManimCommunity-manim-blue?logo=github&logoColor=181717&color=red"></a>
+[![CodeQL](https://github.com/kurodaritsu/manim-workspace/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/kurodaritsu/manim-workspace/actions/workflows/github-code-scanning/codeql)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/kurodaritsu/manim-workspace?quickstart=1)
 
 For `manim` animators who doesn't want to install package managers and dependencies (e.g. FFmpeg, LaTeX) in their local machine to have a working `manim` environment.
 
@@ -25,12 +27,11 @@ You can also use this container to run manim on JupyterLab. For details, see [Us
 ### GitHub Codespaces
 If you want to immediately start working on a project on a cloud environment using only your installed VS Code, try going through these steps below.
 
-> [!IMPORTANT]
-> If you're opening Codespaces through [Visual Studio Code](https://code.visualstudio.com/download) in your computer, you must have [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension installed
+1. Open this repository in a codespace:
 
-1. Click the link below:
+   ![](.github/md-resources/open_in_codespace.png)
 
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/KaidenFrizu/manim-workspace?quickstart=1)
+
 
 2. Create a `manim` [Scene](src/example_scene.py), and enjoy working on your environment
 
@@ -39,7 +40,7 @@ If you want to immediately start working on a project on a cloud environment usi
 
 > [!TIP]
 > To re-open your existing codespace when you launch VS Code again, open a Command Palette (`F1` / `Ctrl + Shift + P` / `Cmd + Shift + P`), search for `Codespaces: Connect to Codespace...`, and select your existing codespace
-> 
+>
 > ![alt text](.github/md-resources/connect_to_codespace.png)
 
 ### Dev Containers
