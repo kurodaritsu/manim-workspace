@@ -1,0 +1,15 @@
+{
+    "vulnerabilityAlerts": {
+        "labels": [
+            "dependencies"
+        ],
+        "assignees": [
+            "@renovate-tests"
+        ],
+        "reviewersFromCodeOwners": true
+    },
+    "extends": [
+        ":gitSignOff",
+        "security:only-security-updates"
+    ]
+}
