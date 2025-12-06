@@ -331,7 +331,7 @@ typing-extensions==4.15.0
     #   manim
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.5.0
+urllib3==2.6.0
     # via requests
 watchdog==6.0.0
     # via manim
