@@ -331,8 +331,10 @@ typing-extensions==4.15.0
     #   manim
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.5.0
-    # via requests
+urllib3==2.6.3
+    # via
+    #   manim-workspace (pyproject.toml)
+    #   requests
 watchdog==6.0.0
     # via manim
 wcwidth==0.2.13
