@@ -228,7 +228,7 @@ pyglet==2.1.8
     # via moderngl-window
 pyglm==2.8.2
     # via moderngl-window
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   ipython
     #   ipython-pygments-lexers
