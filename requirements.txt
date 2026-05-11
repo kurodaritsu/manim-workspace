@@ -156,7 +156,7 @@ matplotlib-inline==0.1.7
     #   ipython
 mdurl==0.1.2
     # via markdown-it-py
-mistune==3.1.4
+mistune==3.2.1
     # via nbconvert
 moderngl==5.12.0
     # via
